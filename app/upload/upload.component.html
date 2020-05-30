@@ -1,0 +1,12 @@
+
+<div class="control-section">
+	<div class="col-lg-9">
+		<div class="control_wrapper">
+			<ejs-uploader #defaultupload id='defaultfileupload' [dropArea]='dropElement' (selected)='onFileRemove($event)' (change)="onSuccess($event)"></ejs-uploader>
+		</div>
+		<ejs-grid #grid id='grid'>
+		</ejs-grid>
+	</div>
+</div>
+
+<button class="uploadbtn" button type ="submit" (click)="onPost()" button style="background-color: #00aaad;width: 8%;">Upload</button>
